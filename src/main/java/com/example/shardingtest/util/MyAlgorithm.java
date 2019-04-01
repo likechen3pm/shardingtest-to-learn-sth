@@ -20,6 +20,7 @@ public class MyAlgorithm implements HintShardingAlgorithm {
      * @return 我们的算法需要从collection中筛选出与shardingValue指定的目标数据源相匹配的项，进行返回
      */
     @Override
+    @SuppressWarnings("unchecked")
     public Collection<String> doSharding(Collection<String> collection, ShardingValue shardingValue) {
         //结果集
         List<String> shardingResult = new ArrayList<>();
